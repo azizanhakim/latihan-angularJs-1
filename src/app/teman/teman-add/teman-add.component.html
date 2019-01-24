@@ -1,0 +1,37 @@
+<h4>Silahkan isikan buku yang ingin dipinjam</h4><br/>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+          <!-- ISBN -->
+          <div class="form-group row">
+            <div class="col-sm-4">
+                <label  class = "row-sm-5">
+                    <!--Name : {{inputInfo.name}}-->
+                    ISBN: 
+                </label>
+                <input type="text" class="form-control" value="{{temanEditParent.isbn}}" [(ngModel)]="inputInfo.isbn" id="inputIsbn"
+            #inputIsbn>
+            </div>
+            <div class="col-sm-4">
+              <!-- #inputNama itu id di pasang di teman-add.component.ts -->
+                <label  class = "row-sm-5">
+                    <!--Name : {{inputInfo.name}}-->
+                    Judul Buku: 
+                </label>
+                <!-- #inputNama itu id di pasang di teman-add.component.ts -->
+          <input type="text" class="form-control" value="{{temanEditParent.nama}}" [(ngModel)]="inputInfo.nama" id="inputNama"
+          #inputNama>
+            </div>
+            <div class="col-sm-4">
+                <label  class = "row-sm-5">
+                    <!--Name : {{inputInfo.name}}-->
+                    Jumlah Buku: 
+                </label>
+                <input type="text" class="form-control" value="{{temanEditParent.qty}}" [(ngModel)]="inputInfo.qty" id="inputQty"
+            #inputQty>
+            </div>
+          </div>          
+      <button type="Add" class="btn btn-success" (click)="tambahTeman(inputEmail)">Pilih</button>
+        </div>
+      </div>
+    </div>

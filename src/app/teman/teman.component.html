@@ -1,0 +1,7 @@
+<!-- ini output/emiter yaitu (temanAdded) berada di teman-add.component.ts dan onTemanAdded($event) 
+    di buat di teman.component.ts-->
+
+<!--Ditambah jdi gini : temanEditParent=temanEdit  (temanAdded)="onTemanAdded($event)"-->
+<app-teman-add [temanEditParent]=temanEdit (temanAdded)="onTemanAdded($event)"></app-teman-add><br/>
+<!-- ini input yaitu [temanParent] berada di teman-list componen.ts -->
+<app-teman-list [temanParent]=temanList (dariChildKeParent)="onTemanEdit($event)"></app-teman-list>
